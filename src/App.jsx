@@ -1,16 +1,14 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import MyButton from './Functions.jsx'
+import { useState } from "react";
+// import ClassCounter from "./components/ClassCounter";
+import "./styles/App.css";
+import PostItem from "./components/PostItem";
 
 function App() {
   return (
-    <div>
-      <h1>Добро пожаловать в моё приложение</h1>
-      <MyButton />
+    <div className="App">
+      <PostItem value={"2222"} item={{ title: 0 }} number={1}></PostItem>
     </div>
   );
 }
 
-export default App
+export default App;
