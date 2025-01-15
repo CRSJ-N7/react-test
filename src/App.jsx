@@ -14,21 +14,24 @@ function App() {
     {id: 3, title: "Javascript 3", body: "Description"},
    
   ]);
-  const [task, setTask] = useState('');
-
-  const addNewTask = (e) => {
-    e.preventDefault();
-    console.log(task)
+  const [task, setTask] = useState("");
+  const addNewTask = () => {
+    const newTask = {
+      title: '',
+      body: ''
+    }
+    console.log(newTask);
   }
-  
+
   return (
     <div className="App">
-      <form>
-        
+      <form>        
+
         <MyInput 
         value={task}
         onChange={e => setTask(e.target.value)}
-        type="text" placeholder='Task'
+        type="text"
+        placeholder='Task'
         ></MyInput>
 
         <MyInput type="text" placeholder='Description'></MyInput>
